@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1425"><meta name="description" content="KAI personal AI assistant starter">
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+<title>KAI Assistant</title>
+</head>
+<body>
+<header><div><h1>KAI</h1><p>YOUR PERSONAL ASSISTANT</p></div><span class="status">STARTER MODE</span></header>
+<main>
+<section class="hero"><div class="orb">✦</div><h2>Hello, I'm KAI.</h2><p>Your assistant workspace is ready. This starter runs locally in your browser.</p></section>
+<section class="panel"><h3>Quick tools</h3>
+<div class="grid"><button data-tool="reply">Draft a message</button><button data-tool="busy">Busy-mode reply</button><button data-tool="email">Draft an email</button><button data-tool="summary">Daily summary template</button></div>
+</section>
+<section class="panel"><h3>Message workspace</h3>
+<label for="context">Paste a message or describe what you need</label>
+<textarea id="context" rows="4" placeholder="Example: I am in a meeting. Please ask them to call me after 5 PM."></textarea>
+<label for="tone">Reply style</label>
+<select id="tone"><option>Friendly and natural</option><option>Professional</option><option>Short and direct</option><option>Warm and polite</option></select>
+<button id="draft" class="primary">Create draft</button>
+<label for="output">Your draft</label>
+<textarea id="output" rows="5" placeholder="Your draft will appear here..." readonly></textarea>
+<div class="actions"><button id="copy">Copy draft</button><button id="clear">Clear</button></div>
+<p class="note" id="notice">Privacy: nothing is sent or read automatically. You control what you paste and copy.</p>
+</section>
+<section class="panel"><h3>Busy Mode</h3><p>Turn this on to prepare an out-of-office response. It does not intercept calls or send messages.</p>
+<label class="switch"><input id="busyToggle" type="checkbox"><span>Enable Busy Mode</span></label>
+<p id="busyState" class="note">Busy Mode is off.</p>
+</section>
+</main>
+<footer>KAI Starter • Version 0.1 • Built for learning</footer>
+<script src="app.js"></script>
+</body></html>
